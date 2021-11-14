@@ -15,11 +15,11 @@ export class AuthService {
   ) { }
 
   entrar(UsuarioLoginModel: UsuarioLoginModel): Observable<UsuarioLoginModel>{
-    return this.http.post<UsuarioLoginModel>('https://api-blog-patricia.herokuapp.com/swagger-ui/usuarios/logar', UsuarioLoginModel)
+    return this.http.post<UsuarioLoginModel>('https://api-blog-patricia.herokuapp.com/usuarios/logar', UsuarioLoginModel)
   }
 
   cadastrar(UsuarioModel: UsuarioModel): Observable<UsuarioModel>{
-    return this.http.post<UsuarioModel>('https://api-blog-patricia.herokuapp.com/swagger-ui/usuarios/cadastrar', UsuarioModel)
+    return this.http.post<UsuarioModel>('https://api-blog-patricia.herokuapp.com/usuarios/cadastrar', UsuarioModel)
   }
 
   logado(){
